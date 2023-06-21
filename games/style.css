@@ -19,18 +19,11 @@ css right way -->
 
 :root {
   /* color  */
-  --clr-accent-500: hsl(12, 60%, 45%);
-  --clr-accent-400: hsl(12, 88%, 59%);
-  --clr-accent-300: hsl(12, 88%, 75%);
-  --clr-accent-100: hsl(13, 100%, 96%);
-
-  --clr-primary-400: hsl(228, 39%, 23%);
-
-  --clr-neutral-900: hsl(233, 12%, 13%);
-  --clr-neutral-100: hsl(0 0% 100%);
+  --clr-primary: #41dadf;
+  --clr-secondary: #6dc632;
 
   /* font  */
-  --ff-primary: "gamefont", sans-serif;
+  --ff-primary: 'gamefont', sans-serif;
 
   /* font weight  */
   --fw-regular: 400;
@@ -41,10 +34,11 @@ css right way -->
   --fs-300: 0.8125rem;
   --fs-400: 0.875rem;
   --fs-500: 0.9375rem;
-  --fs-600: 1rem;
+  --fs-600: 1.4rem;
   --fs-700: 1.875rem;
   --fs-800: 2.5rem;
   --fs-900: 3.5rem;
+  --fs-1000: 4rem;
 
   /* --fs-body: var(--fs-400);
   --fs-primary-heading: var(--fs-800);
@@ -62,42 +56,178 @@ css right way -->
   --size-700: 3rem;
   --size-800: 4rem;
   --size-900: 5rem;
-
-  --text-shadown: text-shadow: 1px 1px white, -1px -1px #444;
 }
 
 /* styling starts here ------------->>  */
-/* 
- {
-  background: url(svg-img/bg.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
-  background-position: center;
-} */
 
-.background-img {
-  color: white;
-  background: linear-gradient(
-      to top,
-      rgba(0, 0, 0, 0.6) 50%,
-      rgba(0, 0, 0, 0.6) 50%
-    ),
+.backcover {
+  font-family: var(--ff-primary);
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)),
     url(svg-img/bg.svg);
-  background-size: cover;
   background-position: center;
-  font-family: gamefont;
   height: 100vh;
-  width: 100vw;
+  background-size: cover;
+  color: white;
+  padding: 1.5rem;
 }
 
-h1,h2,h3,h4,h5{
-
-  text-shadow: inset -5px -5px 5px rgba(255,255,255,0.2),
-              inset -5px -5px 5px rgba(0,0,0,0.2)
+.backcover > h5 {
+  font-size: var(--fs-600);
+  color: var(--clr-primary);
+  float: right;
+  text-shadow: 0px 5px 8px rgba(0, 0, 0, 0.6);
+  letter-spacing: 2px;
+  color: transparent;
+  background: #ffffff;
+  -webkit-background-clip: text;
+  text-shadow: 0px 1px 1px rgb(65 218 233 / 100%);
 }
 
-.text-effect{
-  color: #41DADF;
-  text-shadow: 1px 1px 2px black, 0 0 0em blue, 0 0 0.2em blue;
+.backcover > h1 {
+  font-size: var(--fs-900);
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 10%;
+  left: 10%;
+  letter-spacing: 2px;
+  color: transparent;
+  background: #ffffff;
+  -webkit-background-clip: text;
+  text-shadow: 0px 3px 2px rgb(65 218 233 / 100%);
+}
+
+.flex > h1 {
+  font-size: var(--fs-900);
+  display: flex;
+  justify-content: center;
+  position: relative;
+  left: 5%;
+  letter-spacing: 2px;
+  color: transparent;
+  background: #ffffff;
+  -webkit-background-clip: text;
+  text-shadow: 0px 3px 2px rgb(65 218 233 / 100%);
+  padding: 1.2rem;
+}
+
+.flex p {
+  font-size: var(--fs-900);
+  color: var(--clr-secondary);
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 2rem;
+  width: 100%;
+  text-shadow: 0px 5px 8px rgba(0, 0, 0, 0.6);
+  letter-spacing: 2px;
+  color: transparent;
+  background: #ffffff;
+  -webkit-background-clip: text;
+  text-shadow: 0px 3px 2px rgb(109 198 50 / 100%);
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  top: 8rem;
+  align-items: center;
+}
+
+.secretnumber {
+  width: 10rem;
+  height: 5rem;
+  background-color: #fff1e3;
+  border: #80673a 7px solid;
+  border-radius: 10px;
+  position: relative;
+  left: 48.9%;
+  top: 15%;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.6);
+  font-size: var(--fs-900);
+  font-family: var(--ff-primary);
+  text-align: center;
+  color: black;
+}
+
+.guess {
+  width: 17rem;
+  height: 6rem;
+  background-color: #fff1e3;
+  border: #80673a 7px solid;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.6);
+  font-size: var(--fs-1000);
+  font-family: var(--ff-primary);
+  text-align: center;
+}
+
+.btn {
+  width: 11vw;
+  height: 8vh;
+  background-image: radial-gradient(#ffffff, #6f572f);
+  border-radius: 20px;
+  border: #73542c 3px solid;
+  background-color: white;
+  position: relative;
+  left: 4%;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.6);
+}
+
+.btn a {
+  font-family: var(--ff-primary);
+  text-decoration: none;
+  font-size: var(--fs-700);
+  color: #fbf5de;
+  text-shadow: 0px 3px 4px #000000;
+  -webkit-text-stroke: 1px #572e0d;
+}
+
+.reset {
+  width: 15vw;
+  height: 10vh;
+  background-image: radial-gradient(#ffffff, #6f572f);
+  border-radius: 20px;
+  border: #73542c 3px solid;
+  background-color: white;
+  position: relative;
+  left: 4%;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.6);
+}
+
+.reset a {
+  font-family: var(--ff-primary);
+  text-decoration: none;
+  font-size: var(--fs-800);
+  color: #fbf5de;
+  text-shadow: 0px 3px 4px #000000;
+  -webkit-text-stroke: 1px #572e0d;
+}
+
+.copyright {
+  font-family: sans-serif;
+  font-weight: var(--fw-semi-bold);
+  float: right;
+}
+
+.cloud img {
+  width: 11%;
+  position: absolute;
+  top: 27%;
+  left: 48%;
+  z-index: 1;
+}
+
+.darkbg {
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0),
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 255, 0)
+  );
+  height: 12%;
+  overflow: hidden;
+  margin: 1rem 0;
 }
