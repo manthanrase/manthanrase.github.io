@@ -1,0 +1,622 @@
+@font-face {
+  font-family: iphone-regular;
+  src: url(fonts/SF-Pro-Text-Regular.otf);
+}
+@font-face {
+  font-family: iphone-medium;
+  src: url(fonts/SF-Pro-Text-Medium.otf);
+}
+@font-face {
+  font-family: iphone-semibold;
+  src: url(fonts/SF-Pro-Text-Semibold.otf);
+}
+@font-face {
+  font-family: UniSan-Heavy;
+  src: url(fonts/Uni\ Sans\ Heavy.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: iphone-regular;
+}
+
+nav .container-fluid {
+  padding: 0px;
+  align-items: center !important;
+}
+
+.navbar {
+  margin: 25px 40px 0px;
+}
+
+nav a .navbar-logo {
+  margin-right: 0px;
+  margin: 0px;
+}
+
+nav img {
+  width: 80%;
+}
+
+.navbar-content ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0px;
+  padding: 0px;
+}
+
+.navbar-content ul li {
+  text-decoration: none;
+  list-style-type: none;
+  font-weight: 600;
+}
+
+.navbar-content ul li a {
+  text-decoration: none;
+  color: #252525;
+  transition: 0.3s;
+  position: relative;
+  flex-grow: 1;
+  flex-basis: 30%;
+}
+
+.navbar-content ul li a:hover {
+  letter-spacing: 3px;
+  color: #a37eff;
+}
+
+.Download-btn {
+  background-image: radial-gradient(#d8caf5, #ffffff);
+  padding: 10px 15px;
+  border: #dcd0f6 solid 2px;
+  border-radius: 50px;
+}
+
+a.Download-btn.px-4 {
+  text-decoration: none;
+  color: black;
+}
+
+.icon-download {
+  width: 12%;
+  margin-left: 15px;
+}
+
+.design-portfolio a .icon-download {
+  width: 12%;
+  margin-left: 15px;
+}
+
+/* play button design  */
+
+a.btn.px-4 {
+  font-size: 20px;
+  font-family: iphone-medium;
+  color: black;
+  background-image: radial-gradient(#d8caf5, #ffffff);
+  padding: 9px 2px 8px 25px !important;
+  border: #dcd0f6 solid 2px;
+  border-radius: 50px;
+}
+
+.design-portfolio a .icon-play {
+  width: 23%;
+  margin-left: 15px;
+}
+
+.navbar .toggle-btn {
+  display: none;
+}
+
+.dropdown-open {
+  display: none;
+}
+
+.dropdown-open ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+}
+
+.dropdown-open ul li {
+  list-style-type: none;
+  margin-top: 10px;
+}
+
+.dropdown-open ul li a {
+  font-weight: 600;
+}
+
+.dropdown-open {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.landing-page {
+  display: grid;
+  grid-template-columns: 55vw 45vw;
+  margin: 5% 5% 4%;
+  justify-items: self-start;
+}
+
+/* ------------------Main body section begins------------------ */
+/*------------------- left section  */
+.design-portfolio {
+  width: 50vw;
+  position: relative;
+}
+
+.design-portfolio h1 {
+  margin: 0px;
+  font-size: 12vw;
+  font-family: UniSan-Heavy;
+}
+
+.landing-page .GN {
+  width: 25vw;
+}
+
+.landing-page .GNimg {
+  width: 8vw;
+}
+
+.line {
+  height: 28vw;
+  width: 0.5vh;
+  background-color: #252525;
+  position: absolute;
+  top: 3vw;
+  left: 28vw;
+}
+
+.portfolio {
+  font-family: UniSan-Heavy;
+  rotate: -90deg;
+  position: absolute;
+  top: 10vw;
+  right: 2vw;
+  font-size: 3.4vw;
+  letter-spacing: 1.5vw;
+}
+
+.design-portfolio p {
+  font-family: iphone-medium;
+  font-size: 2vw;
+  margin-bottom: 3rem;
+}
+.design-portfolio p span {
+  font-family: iphone-semibold;
+  font-size: 2vw;
+  color: #a37eff;
+}
+
+/*------------------- Rights section  */
+.landing-page .boy-img {
+  height: auto;
+  z-index: -1;
+}
+
+.boy-img .halfright {
+  position: absolute;
+  width: 50%;
+  left: 50%;
+}
+
+.boy-img .blob1 {
+  transition: 0.5s ease-in-out;
+  width: 35%;
+  left: 53%;
+}
+
+.boy-img .blob2 {
+  transition: 0.5s ease-in-out;
+  width: 35%;
+}
+
+.boy-img .boy {
+  transition: 0.5s ease-in-out;
+  width: 35%;
+}
+
+/* boy hover section  */
+
+.socials {
+  gap: 1rem;
+  background-image: radial-gradient(ellipse, #d4c3f7, #d8caf51a, #63489b00);
+  padding: 10px 0px 10px 0px !important;
+  width: 24vw;
+  margin: 12% 0% 0% !important;
+}
+
+.social-link {
+  font-size: 1rem;
+  text-decoration: none;
+  font-family: iphone-semibold;
+  color: #252525;
+  transition: 0.2s ease-in-out;
+}
+.social-link:hover {
+  font-size: 1.2rem;
+  font-family: iphone-semibold;
+  color: #a37eff;
+}
+
+/* About me section starts  */
+
+.about-me {
+  display: grid;
+  grid-template-columns: 45% 45%;
+  background-color: #f1f4ff;
+  width: 100%;
+  height: auto;
+  align-items: flex-start;
+  padding: 5% 0;
+}
+
+.about-me .my-info {
+  line-height: 2.2rem;
+}
+
+.about-me .left img {
+  width: 65%;
+  position: relative;
+  overflow: hidden;
+  left: -10%;
+  top: -7%;
+}
+
+.my-info a {
+  text-decoration: none;
+}
+
+/* what i do section starts  */
+
+.what-i-do {
+  display: grid;
+  grid-template-columns: 45% 55%;
+  width: 100%;
+  height: auto;
+  align-items: flex-start;
+  padding: 5%;
+}
+
+.what-i-do .my-info {
+  line-height: 2.2rem;
+}
+
+.what-i-do .left img {
+  width: 90%;
+  padding-left: 16rem;
+}
+
+.my-info a {
+  text-decoration: none;
+}
+
+/* my services section starts here  */
+.my-services {
+  line-height: 3rem;
+  justify-content: start;
+}
+
+.name-icon {
+  position: relative;
+  left: -6%;
+}
+
+.my-services-right {
+  line-height: 3rem;
+  justify-content: end !important;
+}
+
+.img-blob {
+  transform: scaleX(-1);
+  position: relative;
+  left: 34%;
+}
+
+.name-icon-right {
+  position: relative;
+  left: -6%;
+  text-align: end;
+}
+
+/*---------------- RESPONSIVE DESIGN SECTION ------------------ */
+
+@media screen and (max-width: 992px) {
+  .navbar-content {
+    display: none;
+  }
+
+  .navbar {
+    margin: 2% 2% 0;
+  }
+
+  .landing-page {
+    display: grid;
+    grid-template-columns: 60% 30%;
+    margin: 5% 5% 3%;
+    justify-items: self-start;
+  }
+
+  a.btn.px-4 {
+    font-size: 15px !important;
+    font-family: iphone-medium;
+    color: black;
+    background-image: radial-gradient(#d8caf5, #ffffff);
+    padding: 9px 2px 8px 9px !important;
+    border: #dcd0f6 solid 2px;
+    border-radius: 50px;
+  }
+
+  .navbar .toggle-btn {
+    display: block;
+    color: black;
+  }
+
+  .dropdown-open {
+    display: block;
+    background-color: #d8caf5;
+    margin-top: 10px;
+  }
+  .Download-btn {
+    margin-top: 10px;
+  }
+
+  a.btn.px-4 {
+    font-size: 20px;
+    font-family: iphone-medium;
+    color: black;
+    background-image: radial-gradient(#d8caf5, #ffffff);
+    padding: 9px 2px 8px 25px !important;
+    border: #dcd0f6 solid 2px;
+    border-radius: 50px;
+  }
+
+  .dropdown-open[data-visible='true'] {
+    display: none;
+  }
+
+  .design-portfolio h1 {
+    font-size: 12vw;
+    font-family: UniSan-Heavy;
+  }
+
+  .GNimg {
+    width: 25%;
+  }
+
+  .dropdown-open ul li a {
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+  }
+
+  .socials {
+    gap: 1rem;
+    background-image: radial-gradient(ellipse, #d4c3f7, #d8caf51a, #63489b00);
+    padding: 10px 0px 10px 0px !important;
+    width: 40vw;
+    margin: 12% 0% 0% !important;
+  }
+
+  .social-link {
+    font-size: 0.8rem;
+    text-decoration: none;
+    font-family: iphone-semibold;
+    color: #252525;
+    transition: 0.2s ease-in-out;
+  }
+  .social-link:hover {
+    font-size: 1rem;
+    font-family: iphone-semibold;
+    color: #a37eff;
+  }
+
+  .about-me {
+    display: grid;
+    grid-template-columns: 30% 60%;
+    align-items: first baseline;
+    background-color: #f1f4ff;
+    width: 100%;
+    height: auto;
+    align-items: flex-start;
+    padding: 5% 0;
+  }
+  /* what i do section starts here  */
+  .what-i-do {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: flex-start;
+    padding: 5%;
+  }
+
+  .what-i-do .my-info {
+    line-height: 2.2rem;
+  }
+
+  .what-i-do .left img {
+    width: 90%;
+    padding-left: 4rem;
+  }
+
+  .my-info a {
+    text-decoration: none;
+  }
+
+  /* my services section starts here  */
+  .my-services {
+    line-height: 3rem;
+    justify-content: start;
+  }
+
+  .name-icon {
+    position: relative;
+    left: -6%;
+  }
+
+  .my-services-right {
+    line-height: 3rem;
+    justify-content: end !important;
+  }
+
+  .img-blob {
+    transform: scaleX(-1);
+    position: relative;
+    left: 33%;
+  }
+
+  .name-icon-right {
+    position: relative;
+    left: -7%;
+    text-align: end;
+  }
+}
+
+/*---------------- RESPONSIVE DESIGN SECTION ------------------ */
+
+@media screen and (max-width: 320px) {
+  .navbar-content {
+    display: none;
+  }
+
+  .navbar {
+    margin: 15px;
+  }
+
+  .navbar .toggle-btn {
+    display: block;
+  }
+
+  .landing-page {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-self: center;
+    margin: 5% 2% 85%;
+    justify-items: self-start;
+  }
+
+  a.btn.px-4 {
+    font-size: 14px;
+    font-family: iphone-medium;
+    color: black;
+    background-image: radial-gradient(#d8caf5, #ffffff);
+    padding: 9px 0px 8px 9px !important;
+    border: #dcd0f6 solid 2px;
+    border-radius: 50px;
+    position: relative;
+    left: 35%;
+  }
+
+  .dropdown-open {
+    display: block;
+    background-color: #d8caf5;
+    margin-top: 10px;
+  }
+  .Download-btn {
+    margin-top: 10px;
+  }
+
+  .dropdown-open[data-visible='true'] {
+    display: none;
+  }
+
+  .design-portfolio h1 {
+    font-size: 30vw;
+    font-family: UniSan-Heavy;
+  }
+  .design-portfolio {
+    width: 50vw;
+    position: relative;
+    left: 7%;
+  }
+
+  .GNimg {
+    width: 25%;
+  }
+
+  .portfolio {
+    font-family: UniSan-Heavy;
+    rotate: -90deg;
+    position: absolute;
+    top: 25vw;
+    right: -60vw;
+    font-size: 10.4vw;
+    letter-spacing: 1.5vw;
+  }
+
+  .line {
+    height: 70vw;
+    width: 0.5vh;
+    background-color: #252525;
+    position: absolute;
+    top: 8vw;
+    left: 66vw;
+  }
+
+  .landing-page .GNimg {
+    width: 14vw;
+  }
+
+  .landing-page .GN {
+    width: 71vw;
+  }
+
+  .landing-page .boy-img {
+    width: 150%;
+    z-index: -1;
+    left: -53%;
+    position: relative;
+    margin-top: 30px;
+  }
+
+  .design-portfolio p {
+    font-family: iphone-medium;
+    font-size: 5vw;
+    margin-bottom: 1rem;
+    width: 124%;
+  }
+  .design-portfolio p span {
+    font-family: iphone-semibold;
+    font-size: 5vw;
+    color: #a37eff;
+  }
+
+  .socials {
+    gap: 1rem;
+    background-image: radial-gradient(ellipse, #d4c3f7, #d8caf51a, #63489b00);
+    padding: 10px 0px 10px 0px !important;
+    width: 80vw;
+    margin: 12% 0% 0% !important;
+  }
+
+  .social-link {
+    font-size: 0.8rem;
+    text-decoration: none;
+    font-family: iphone-semibold;
+    color: #252525;
+    transition: 0.2s ease-in-out;
+  }
+  .social-link:hover {
+    font-size: 1rem;
+    font-family: iphone-semibold;
+    color: #a37eff;
+  }
+
+  .about-me {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #f1f4ff;
+    width: 100%;
+    height: auto;
+    align-items: flex-start;
+    padding: 5%;
+  }
+  .about-me .left {
+    display: none;
+  }
+}
