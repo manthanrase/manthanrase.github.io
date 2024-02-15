@@ -87,7 +87,6 @@ css right way -->
   font-size: var(--fs-900);
   display: flex;
   justify-content: center;
-  position: relative;
   top: 10%;
   left: 10%;
   letter-spacing: 2px;
@@ -95,20 +94,18 @@ css right way -->
   background: #ffffff;
   -webkit-background-clip: text;
   text-shadow: 0px 3px 2px rgb(65 218 233 / 100%);
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
 
 .flex > h1 {
   font-size: var(--fs-900);
-  display: flex;
-  justify-content: center;
-  position: relative;
-  left: 5%;
   letter-spacing: 2px;
   color: transparent;
   background: #ffffff;
   -webkit-background-clip: text;
   text-shadow: 0px 3px 2px rgb(65 218 233 / 100%);
-  padding: 1.2rem;
 }
 
 .flex p {
@@ -130,9 +127,9 @@ css right way -->
 .flex {
   display: flex;
   justify-content: space-around;
-  position: relative;
   top: 8rem;
   align-items: center;
+  margin-right: 112px;
 }
 
 .secretnumber {
@@ -141,14 +138,12 @@ css right way -->
   background-color: #fff1e3;
   border: #80673a 7px solid;
   border-radius: 10px;
-  position: relative;
-  left: 48.9%;
-  top: 15%;
   box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.6);
   font-size: var(--fs-900);
   font-family: var(--ff-primary);
   text-align: center;
   color: black;
+  margin: auto;
 }
 
 .guess {
@@ -210,13 +205,18 @@ css right way -->
   font-family: sans-serif;
   font-weight: var(--fw-semi-bold);
   float: right;
+  margin-top: 40px;
+}
+
+.cloud {
+  padding: 20px 0 0 0;
 }
 
 .cloud img {
-  width: 11%;
+  width: 14%;
   position: absolute;
-  top: 27%;
-  left: 48%;
+  top: 19%;
+  left: 43%;
   z-index: 1;
 }
 
@@ -233,108 +233,6 @@ css right way -->
 }
 
 /* -----------mobile view design ------------------------ */
-
-@media screen and (max-width: 992px) {
-  .backcover > h5 {
-    font-size: var(--fs-200);
-    text-shadow: 0px 1px 1px rgb(65 218 233 / 100%);
-    justify-content: center;
-    display: flex;
-  }
-
-  .backcover > h1 {
-    font-size: var(--fs-700);
-    width: 103%;
-    top: 3%;
-    left: -1%;
-  }
-
-  .secretnumber {
-    width: 7rem;
-    background-color: #fff1e3;
-    border: #80673a 7px solid;
-    border-radius: 10px;
-    position: relative;
-    left: 44%;
-    top: 6%;
-    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.6);
-    font-size: var(--fs-800);
-    font-family: var(--ff-primary);
-    text-align: center;
-    color: black;
-  }
-
-  .cloud img {
-    width: 15%;
-    position: absolute;
-    top: 20%;
-    left: 42%;
-    z-index: 1;
-  }
-
-  .guess {
-    width: 10rem;
-    height: 4rem;
-    background-color: #fff1e3;
-    border: #80673a 7px solid;
-    border-radius: 10px;
-    position: absolute;
-    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.6);
-    font-size: var(--fs-800);
-    font-family: var(--ff-primary);
-    text-align: center;
-    top: -13%;
-    left: 43%;
-  }
-
-  .flex {
-    top: 12%;
-  }
-
-  .flex p {
-    font-size: var(--fs-800);
-    top: -6px;
-    text-shadow: 0px 5px 8px rgba(0, 0, 0, 0.6);
-    letter-spacing: 2px;
-    color: transparent;
-    background: #ffffff;
-    -webkit-background-clip: text;
-    text-shadow: 0px 2px 2px rgb(109 198 50 / 100%);
-  }
-  .flex > h1 {
-    position: relative;
-    left: 1%;
-    letter-spacing: 2px;
-    color: transparent;
-    background: #ffffff;
-    -webkit-background-clip: text;
-    text-shadow: 0px 2px 2px rgb(65 218 233 / 100%);
-    padding: 0px;
-    font-size: var(--fs-700);
-  }
-
-  .reset a {
-    font-family: var(--ff-primary);
-    text-decoration: none;
-    font-size: var(--fs-700);
-    color: #fbf5de;
-    text-shadow: 0px 3px 4px #000000;
-    -webkit-text-stroke: 1px #572e0d;
-  }
-  .btn {
-    width: 15vw;
-    height: 8vh;
-    border-radius: 8px;
-    left: 1%;
-  }
-
-  .copyright {
-    font-family: sans-serif;
-    font-weight: var(--fw-semi-bold);
-    margin-top: 3%;
-  }
-}
-
 @media screen and (max-width: 320px) {
   .backcover > h5 {
     font-size: var(--fs-200);
@@ -347,31 +245,31 @@ css right way -->
   .backcover > h1 {
     font-size: 9vw;
     width: 103%;
-    top: 3%;
-    left: -1%;
+    margin-top: 20px;
   }
 
   .secretnumber {
-    width: 7rem;
+    width: 8rem;
+    height: 4rem;
     background-color: #fff1e3;
     border: #80673a 7px solid;
     border-radius: 10px;
-    position: relative;
-    left: 30%;
-    top: 6%;
     box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.6);
     font-size: var(--fs-800);
     font-family: var(--ff-primary);
     text-align: center;
     color: black;
+    margin-top: 20px;
+  }
+  .cloud {
+    padding: 40px 0 0 0;
   }
 
   .cloud img {
-    width: 41%;
+    width: 46%;
     position: absolute;
-    top: 20%;
-    left: 29%;
-    z-index: 1;
+    top: 25%;
+    left: 26%;
   }
 
   .guess {
@@ -390,7 +288,8 @@ css right way -->
   }
 
   .flex {
-    top: 21%;
+    margin: 0 !important;
+    padding: 12px 0;
   }
 
   .flex p {
@@ -433,8 +332,8 @@ css right way -->
   .copyright {
     font-family: sans-serif;
     font-weight: var(--fw-semi-bold);
-    float: none;
-    /* margin: 20px; */
     margin-top: 7%;
+    text-align: center;
+    float: none;
   }
 }
