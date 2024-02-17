@@ -232,8 +232,25 @@ css right way -->
   margin: 1rem 0;
 }
 
+.desktopview {
+  display: block;
+}
+
+.mobileview {
+  display: none;
+}
+
 /* -----------mobile view design ------------------------ */
+
 @media screen and (max-width: 720px) {
+  .mobileview {
+    display: block;
+  }
+
+  .desktopview {
+    display: none;
+  }
+
   .backcover > h5 {
     font-size: var(--fs-200);
     text-shadow: 0px 1px 1px rgb(65 218 233 / 100%);
@@ -244,7 +261,6 @@ css right way -->
 
   .backcover > h1 {
     font-size: 9vw;
-    width: 103%;
     margin-top: 20px;
   }
 
@@ -259,7 +275,6 @@ css right way -->
     font-family: var(--ff-primary);
     text-align: center;
     color: black;
-    margin-top: 20px;
   }
   .cloud {
     padding: 40px 0 0 0;
@@ -268,7 +283,7 @@ css right way -->
   .cloud img {
     width: 46%;
     position: absolute;
-    top: 25%;
+    top: 20%;
     left: 26%;
   }
 
@@ -278,18 +293,16 @@ css right way -->
     background-color: #fff1e3;
     border: #80673a 7px solid;
     border-radius: 10px;
-    position: absolute;
     box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.6);
     font-size: var(--fs-800);
     font-family: var(--ff-primary);
-    text-align: center;
-    top: -152%;
-    left: 20%;
+    display: block;
+    margin: 12px auto;
   }
 
   .flex {
     margin: 0 !important;
-    padding: 12px 0;
+    padding: 8px 0;
   }
 
   .flex p {
@@ -303,8 +316,6 @@ css right way -->
     text-shadow: 0px 2px 2px rgb(109 198 50 / 100%);
   }
   .flex > h1 {
-    position: relative;
-    left: 5%;
     letter-spacing: 2px;
     color: transparent;
     background: #ffffff;
