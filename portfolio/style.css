@@ -242,7 +242,7 @@ a.btn.px-4 {
 }
 
 .landing-page {
-  margin: 2% 5%5%;
+  margin: 3% 8% 0;
   justify-items: self-start;
 }
 
@@ -257,8 +257,10 @@ a.btn.px-4 {
 }
 
 .design-text {
-  font-size: 130px;
-  font-family: UniSan-Heavy;
+  position: relative;
+  left: -100px;
+  width: 120%;
+  padding-bottom: 30px;
 }
 
 .portfolio-text {
@@ -354,8 +356,29 @@ a.btn.px-4 {
   }
 }
 
-.myphoto img {
-  width: 130%;
+.myphoto {
+  position: relative;
+  top: -60px;
 }
 
+.animate img {
+  width: 90%;
+}
+
+.animate {
+  animation: gliding-animation 2s infinite ease-in-out;
+}
+
+@keyframes gliding-animation {
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+.name-tag {
+  width: 40%;
+  position: relative;
+  top: 40px;
+  rotate: 345deg;
+}
 /* =======================parallax photo ===================== */
