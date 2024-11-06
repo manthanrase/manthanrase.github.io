@@ -12,13 +12,13 @@
 </head>
 </head>
 
-<body>
+<body style="background-image: url(img/bg.png);">
   <!-------------- navigation section ------------ -->
   <header>
     <nav class="navbar">
       <div class="container-fluid">
         <a class="navbar-logo" href="#">
-          <img src="img/logo.png" alt="">
+          <img src="img/logo.svg" alt="">
         </a>
 
         <div class="navbar-content">
@@ -26,227 +26,94 @@
             <li class="px-4"><a href="https://manthanrase.github.io/games" target="_blank">My Projects</a></li>
             <li class="px-4"><a href="#">About</a></li>
             <li class="px-4"><a href="#">Contact Me</a></li>
-            <li class="px-4"><a href="#">Portfolio</a></li>
-            <a class="Download-btn px-4" href="https://drive.google.com/file/d/1AUxg0c6XHDtVD-5_utEbymC8MgEloLzq/view"
-              target="_blank">Download CV
-              <img class="icon-download" src="img/svgs/icon-download.svg" alt="">
-            </a>
+            <!-- ================new button =============== -->
+            <li>
+              <div> <a class="px-4"
+                  href="https://drive.google.com/file/d/1G1_NRwqf8DHDVyj1Ch6f-yNcyVfJC4sI/view?usp=sharing"
+                  target="_blank">
+                  <button class="blob-btn">
+                    Download CV
+                    <span class="blob-btn__inner">
+                      <span class="blob-btn__blobs">
+                        <span class="blob-btn__blob"></span>
+                        <span class="blob-btn__blob"></span>
+                        <span class="blob-btn__blob"></span>
+                        <span class="blob-btn__blob"></span>
+                      </span>
+                    </span>
+                  </button>
+                  <br />
+
+                </a>
+            </li>
+
+
+            <svg class="blob-svg" xmlns="http://www.w3.org/2000/svg" version="1.1">
+              <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo">
+                </feColorMatrix>
+                <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+              </filter>
+            </svg>
+
+            <!-- ================new button =============== -->
           </ul>
         </div>
-        <a class="toggle-btn ps-4" aria-controls="dropdown-open" aria-expanded="false" href="#"><i
-            class="fa-solid fa-bars"></i></a>
       </div>
 
-      <div class="dropdown-open" id="dropdown-open" data-visible="true">
-        <ul>
-          <li class="px-4"><a href="https://manthanrase.github.io/games">My Projects</a></li>
-          <li class="px-4"><a href="#">About</a></li>
-          <li class="px-4"><a href="#">Contact Me</a></li>
-          <li class="px-4"><a href="#">Portfolio</a></li>
-          <a class="Download-btn px-4"
-            href="https://drive.google.com/file/d/1AUxg0c6XHDtVD-5_utEbymC8MgEloLzq/view">Download CV
-            <img class="icon-download" src="img/svgs/icon-download.svg" alt="">
-          </a>
-        </ul>
-      </div>
     </nav>
   </header>
   <!-------------- main body section  ------------>
 
   <main>
     <div class="landing-page ">
+      <div class="row">
+        <div class="col-sm-7">
+          <div class="d-flex flex-column">
+            <div class="design-text">DESIGN</div>
+            <p class="portfolio-text"> PORTFOLIO</p>
+            <div>
+              <p class="tag-line">TELL A <span>BETTER BRAND </span> STORY</p>
+              <button class="glow-on-hover">MY WORK</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="myphoto">
+            <div><img src="img/myphoto.png" alt=""></div>
+
+            <!-- ==============hover animation ============== -->
+
+          </div>
+        </div>
+      </div>
+      <!-- <div class="grid-container">
+        <div class="grid-item">
+          <div class="d-flex flex-column">
+            <div class="design-text">DESIGN</div>
+            <p class="portfolio-text"> PORTFOLIO</p>
+            <div>
+              <p class="tag-line">TELL A <span>BETTER BRAND </span> STORY</p>
+              <button class="glow-on-hover">MY WORK</button>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item myphoto">
+          <div><img src="img/myphoto.png" alt=""></div>
+        </div>
+      </div> -->
       <!-- left section  -->
-      <div class="design-portfolio">
-        <div>
-          <h1>DESI</h1>
-        </div>
-        <div class="GN d-flex align-self-end justify-content-between">
-          <img class="GNimg" src="img/svgs/logo-icon.svg" alt="">
-          <h1>GN</h1>
-          <div class="line">
-          </div>
-          <div>
-            <h2 class="portfolio">
-              PORTFOLIO
-            </h2>
-          </div>
-        </div>
-
-        <p>TELL A <span>BETTER BRAND </span> <br> STORY</p>
-
-        <a class="btn px-4" href="#">
-          View Work
-          <img class="icon-play" src="img/svgs/icon-play.svg" alt="">
-        </a>
-
-        <div class="socials d-flex ">
-          <a class="social-link" href="#">INSTAGRAM</a>
-          /
-          <a class="social-link" href="https://www.youtube.com/c/ManthanRase" target="_blank">YOUTUBE</a>
-          /
-          <a class="social-link" href="#">TWITTER</a>
-        </div>
-
-      </div>
-      <!-- Right section  -->
-      <div class="boy-img">
-        <div class="right-animation">
-          <img class="blob1 halfright" src="img/svgs/blob-fill.svg" alt="">
-          <img class="blob2 halfright" src="img/svgs/blob-outline.svg" alt="">
-          <img class="boy halfright" src="img/man.png" alt="">
-        </div>
-      </div>
-    </div>
-
-    <div class="section">
-      <div class="about-me">
-        <div class="left">
-          <img src="img/svgs/pattern.png" alt="">
-        </div>
-        <div class="my-info">
-          <p style="color: #a37eff;  font-family: iphone-semibold">NICE TO MEET YOU</p>
-          <h2 style="font-family: iphone-semibold">Hi there, I'm Manthan</h2>
-          <p>My name is Manthan Rase. I work as an User Interface Designer currently working at BillMart Fintech Private
-            Limited. <br>
-            Thanks to my background as a freelance designer in the industry and self learning, I can help you increase
-            the conversion & retention rate of your business by crdating delightful user experiences. <br>
-            My goal is to make sure your cusromers and users are satisfied when they're using your products and services
-            online.
-          </p>
-          <a href="#">
-            <h6 style="color: #a37eff;  font-family: iphone-semibold"> LEARN MORE ABOUT ME <span class="ps-2"><img
-                  src="img/svgs/ARROW.png" alt=""></span></h6>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="section">
-      <div class="what-i-do">
-
-        <!-- Left section html here --->
-
-        <div class="my-info">
-          <p style="color: #a37eff;  font-family: iphone-semibold">WHAT I DO</p>
-          <h2 style="font-family: iphone-semibold">Websites & Web apps
-            design</h2>
-          <p>Having an easy to use and polished website is inevitable for almost every business in 2023. if it's done
-            correctly, your website can be the spine of your digital marketing campaigns and a key deciding factor for
-            your potential customers.
-          </p>
-          <a href="#">
-            <h6 style="color: #a37eff;  font-family: iphone-semibold"> WHAT I CAN DO FOR YOU <span class="ps-2"><img
-                  src="img/svgs/ARROW.png" alt=""></span></h6>
-          </a>
-
-          <!-- ----- my services section here  -->
-
-          <div class="my-services d-flex mb-4">
-            <img src="img/svgs/my-services-blob.svg" alt="">
-            <div class="name-icon">1. Complete UI/UX design <br>
-              <img src="img/svgs/UI-UX.svg" alt="">
-            </div>
-          </div>
-          <div class="my-services-right d-flex mb-4">
-            <img class="img-blob" src="img/svgs/my-services-blob.svg" alt="">
-            <div class="name-icon-right">2. High fidelity prototyping <br>
-              <img src="img/svgs/UI-UX.svg" alt="">
-            </div>
-          </div>
-          <div class="my-services d-flex mb-4">
-            <img src="img/svgs/my-services-blob.svg" alt="">
-            <div class="name-icon">3. Front-end development <br>
-              <img src="img/svgs/UI-UX.svg" alt="">
-            </div>
-          </div>
-
-
-        </div>
-
-        <!-- right section html here --->
-
-        <div class="left">
-          <img src="img/svgs/whatido.svg" alt="">
-        </div>
-      </div>
-    </div>
-
-    <!-- my work section starts here --->
-    <div class="section">
-      <div class="about-me">
-        <div class="left project">
-          <div>
-            <h1>MY <br>WORK</h1>
-          </div>
-          <div class="category">
-            <p>Category</p>
-            <h3>Game</h3>
-            <div class="line2">
-            </div>
-          </div>
-        </div>
-        <div class="my-info">
-          <div class="right">
-            <p style="color: #a37eff;">Name</p>
-            <h3>Guess My Number</h3>
-            <a target="_blank" id="#myprojects" href="https://manthanrase.github.io/games"><img style="width: 38vw;"
-                src="img/GMN.png" alt=""></a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="what-i-do">
-
-      <!-- Left section html here --->
-
-      <div class="my-info">
-        <p style="color: #a37eff;  font-family: iphone-semibold">WHAT I DO</p>
-        <h2 style="font-family: iphone-semibold">Websites & Web apps
-          design</h2>
-        <p>Having an easy to use and polished website is inevitable for almost every business in 2023. if it's done
-          correctly, your website can be the spine of your digital marketing campaigns and a key deciding factor for
-          your potential customers.
-        </p>
-        <a href="#">
-          <h6 style="color: #a37eff;  font-family: iphone-semibold"> WHAT I CAN DO FOR YOU <span class="ps-2"><img
-                src="img/svgs/ARROW.png" alt=""></span></h6>
-        </a>
-
-        <!-- ----- my services section here  -->
-
-        <div class="my-services d-flex mb-4">
-          <img src="img/svgs/my-services-blob.svg" alt="">
-          <div class="name-icon">1. Complete UI/UX design <br>
-            <img src="img/svgs/UI-UX.svg" alt="">
-          </div>
-        </div>
-        <div class="my-services-right d-flex mb-4">
-          <img class="img-blob" src="img/svgs/my-services-blob.svg" alt="">
-          <div class="name-icon-right">2. High fidelity prototyping <br>
-            <img src="img/svgs/UI-UX.svg" alt="">
-          </div>
-        </div>
-        <div class="my-services d-flex mb-4">
-          <img src="img/svgs/my-services-blob.svg" alt="">
-          <div class="name-icon">3. Front-end development <br>
-            <img src="img/svgs/UI-UX.svg" alt="">
-          </div>
-        </div>
-
-
-      </div>
+      <!-- right section  -->
 
 
 
-      <!-- right section html here --->
 
-      <div class="left">
-        <img src="img/svgs/whatido.svg" alt="">
-      </div>
-    </div>
 
-    <script src="function.js"></script>
+
+
+
+      <script src="function.js"></script>
   </main>
   <footer></footer>
 </body>

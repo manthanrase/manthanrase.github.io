@@ -12,7 +12,7 @@ document.querySelector('.check').addEventListener('click', function () {
 
   // no guess
   if (!guess) {
-    document.querySelector('.message').textContent = ' No input yet';
+    document.querySelector('.message').textContent = 'No input yet';
   }
 
   // incorrect guess
