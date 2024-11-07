@@ -1,14 +1,12 @@
 'use strict';
 
-let randomNumber = Math.trunc(Math.random() * 20 + 1);
-document.querySelector('.secretnumber').innerHTML = '?';
+let secretNumber = Math.trunc(Math.random() * 20) + 1;
 
 let score = 20;
 let highscore = 0;
 
 document.querySelector('.check').addEventListener('click', function () {
-  let guess = Number(document.querySelector('.guess').value);
-  console.log(guess, typeof guess);
+  const guess = Number(document.querySelector('.guess').value);
 
   // no guess
   if (!guess) {
@@ -16,10 +14,10 @@ document.querySelector('.check').addEventListener('click', function () {
   }
 
   // incorrect guess
-  else if (guess !== randomNumber) {
+  else if (guess !== secretNumber) {
     if (score > 0) {
       document.querySelector('.message').textContent =
-        guess > randomNumber ? 'Too High' : 'Too Low';
+        guess > secretNumber ? 'Too High' : 'Too Low';
       score--;
       document.querySelector('.score').textContent = score;
     } else {
@@ -29,9 +27,9 @@ document.querySelector('.check').addEventListener('click', function () {
   }
 
   // right guess
-  else if (guess === randomNumber) {
+  else if (guess === secretNumber) {
     document.querySelector('.message').textContent = 'You won the game';
-    document.querySelector('.secretnumber').textContent = randomNumber;
+    document.querySelector('.number').textContent = secretNumber;
     document.getElementById('image').style.display = 'none';
     document.querySelector('.darkbg').style.backgroundColor =
       // 'linear-gradient (to right, rgba(255, 0, 0, 0), rgba(36, 255, 13, 1), rgba(0, 0, 255, 0))';
@@ -45,11 +43,11 @@ document.querySelector('.check').addEventListener('click', function () {
 });
 
 document.querySelector('.reset').addEventListener('click', function () {
-  randomNumber = Math.trunc(Math.random() * 20 + 1);
   score = 20;
-  document.querySelector('.secretnumber').textContent = '?';
+  secretNumber = Math.trunc(Math.random() * 20) + 1;
+  document.querySelector('.number').textContent = '?';
   document.querySelector('.message').textContent = 'Start guessing...';
   document.querySelector('.score').textContent = score;
-  document.querySelector('.guess').value = ' ';
+  document.querySelector('.guess').value = '';
   document.getElementById('image').style.display = 'block';
 });

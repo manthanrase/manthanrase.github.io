@@ -132,7 +132,7 @@ css right way -->
   margin-right: 112px;
 }
 
-.secretnumber {
+.number {
   width: 10rem;
   height: 5rem;
   background-color: #fff1e3;
@@ -236,13 +236,9 @@ css right way -->
   display: block;
 }
 
-.mobileview {
-  display: none;
-}
-
 /* -----------mobile view design ------------------------ */
 
-@media screen and (max-width: 720px) {
+/* @media screen and (max-width: 720px) {
   .mobileview {
     display: block;
   }
@@ -264,7 +260,7 @@ css right way -->
     margin-top: 20px;
   }
 
-  .secretnumber {
+  .number {
     width: 8rem;
     height: 4rem;
     background-color: #fff1e3;
@@ -347,4 +343,4 @@ css right way -->
     text-align: center;
     float: none;
   }
-}
+} */
