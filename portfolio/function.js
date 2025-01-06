@@ -78,3 +78,5 @@ $('.video-section').on('translated.owl.carousel', function (event) {
 const carousel = new bootstrap.Carousel('#myCarousel');
 
 window.slide = new SlideNav();
+
+

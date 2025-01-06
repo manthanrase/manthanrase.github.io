@@ -14,6 +14,10 @@
   font-family: UniSan-Heavy;
   src: url(fonts/Uni\ Sans\ Heavy.otf);
 }
+@font-face {
+  font-family: Arcade-Normal;
+  src: url(fonts/ARCADECLASSIC.TTF);
+}
 
 :root {
   --brand-color: #a37eff;
@@ -43,6 +47,15 @@ nav a .navbar-logo {
 
 nav img {
   width: 42px;
+}
+
+.row>*{
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  margin-top: var(--bs-gutter-y);
+  padding-left: 0px !important;
+  padding-right: 0px !important;
 }
 
 .navbar-content ul {
@@ -106,21 +119,24 @@ nav img {
 }
 
 .dropbtn {
+  font-family: Arcade-Normal;
   background-color: transparent;
   padding: 12px;
-  font-size: 16px;
+  font-size: 20px;
   border: none;
   cursor: pointer;
   text-align: right;
-  width: 171px;
+  width: 196px;
   font-weight: 600;
   transition: 0.3s;
+  letter-spacing: 1px;
+  color: var(--brand-color);
 
 }
 
 .dropbtn:hover {
   letter-spacing: 3px;
-    color: #a37eff;
+    color: #000;
 }
 
 
@@ -141,15 +157,19 @@ nav img {
 }
 
 .dropdown-content a {
-  color: black;
+  color: white;
   padding: 16px;
   text-decoration: none;
   display: block;
   text-align: left;
+  border-radius: 8px;
+  font-family: Arcade-Normal;
+  letter-spacing: 1px; 
+  font-size: 18px;
 }
 
 .dropdown-content a:hover {
-  color: white;
+  color: black;
   background-color: var(--brand-secondary-color);  
   border-radius: 8px; 
 }
@@ -340,6 +360,9 @@ a.btn.px-4 {
   justify-items: self-start;
 }
 
+
+
+
 /* ------------------Main body section begins------------------ */
 /*------------------- left section  */
 .grid-container {
@@ -489,7 +512,113 @@ a.btn.px-4 {
   rotate: 340deg;
   left: 40px;
 }
-/* =======================timeline ===================== */
+/* ======================= Experience ===================== */
+
+.Experience {
+  position: relative;
+  background-image: url(img/edu-bg.png);
+  background-size: cover;
+  padding: 88px;
+  width: 100%;
+}
+
+.Experience ul {
+	list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 230px);
+    justify-content: space-around;
+    text-align: center;
+}
+.Experience li {
+	grid-column: span 2;
+	text-align: center;
+	border-radius: 65px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 25px;
+	line-height: 1.5em;
+	font-family: sans-serif;
+	position: relative;
+	padding: 20px;
+	border: 20px solid #0000;
+	background: linear-gradient(#a37eff 0 0) content-box,
+		linear-gradient(var(--c, #bfa6ff) 0 0) padding-box,
+		linear-gradient(var(--d, 90deg), #0000 75%, #d1beff 0) border-box;
+}
+.Experience li:nth-child(even) {
+	grid-column-end: -1;
+	--d: -90deg;
+	--c: #bfa6ff;
+}
+.Experience li:not(:last-child) {
+	margin-bottom: -20px;
+}
+.Experience li:before,
+.Experience li:after {
+	content: "";
+	display: block;
+	height: 0.6em;
+}
+
+.Experience time {
+	position: absolute;
+	font-size: 20px;
+	left: calc(100% + 50px);
+	top: 50%;
+	transform: translateY(-50%);
+	white-space: nowrap;
+  color: black;
+}
+
+.Experience img{
+  width: 16%;
+  position: absolute;
+  top: -35px;
+  right: -13px;
+}
+
+.Experience .tape1{
+
+}
+
+.Experience li:nth-child(even) time {
+	left: auto;
+	color: #000;
+	right: calc(100% + 50px);
+}
+.Experience time:before {
+	content: "";
+	position: absolute;
+	height: 10px;
+	top: calc(50% - 5px);
+	right: calc(100% + 5px);
+	width: 65px;
+  background: repeating-linear-gradient(-90deg, #000000 0 5px, #0000 0 10px) 50% / 100% 2px no-repeat;
+}
+.Experience li:nth-child(even) time:before {
+	right: auto;
+	left: calc(100% + 5px);
+	background: repeating-linear-gradient(90deg, #009cda 0 5px, #0000 0 10px) 50%/100%
+		2px no-repeat;
+}
+
+.experience-title{
+  margin: 0 100px 36px;
+
+  h1{
+    font-weight: 600;
+  }
+}
+
+.timeline li a{
+  color: rgb(0, 0, 0);
+}
+
+/* =======================Education details ===================== */
+
+
 
 /* =======================Lays photo ===================== */
 .lays {
@@ -498,7 +627,7 @@ a.btn.px-4 {
   }
 
   img {
-    width: 85%;
+    width: 80%;
   }
 }
 
