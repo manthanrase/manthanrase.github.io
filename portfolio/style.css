@@ -136,22 +136,22 @@ nav img {
 #blinking-button {
   padding: 8px 15px;
   border-radius: 48px;
-  border: 1px solid #ffffff;
+  border: 2px solid black;
   text-align: center;
   font-size: 17px;
 }
 @keyframes blink {
   0%,
   100% {
-    background-color: #a37eff;
+    background-color: #fea900;
   }
   50% {
-    background-color: #7b5dc6;
+    background-color: #fae3b5;
   }
 }
 #blinking-button {
-  background-color: #a37eff;
-  color: white;
+  background-color: #ffc759 ;
+  color: rgb(0, 0, 0);
   animation: blink 2s linear infinite;
 }
 
