@@ -21,7 +21,7 @@
     <!-------------- navigation section ------------ -->
   <header>
     <nav class="navbar">
-      <div class="container-fluid">
+      <div class="container">
         <a class="navbar-logo" href="#">
           <img src="img/burgermenuicon.svg" alt="">
         </a>
@@ -82,11 +82,9 @@
     </nav>
   </header>
   <div class="container">
-
-  </div>
-    <div class="container landing-page ">
+    <div class="landing-page ">
       <div class="row w-100">
-        <div class="col-sm-7">
+        <div class="col-sm-7 margin_top_50">
           <div class="d-flex flex-column">
             <img class="design-text" src="img/Design-Portfolio.png" alt="">
             <!-- <div class="design-text">DESIGN</div>
@@ -108,7 +106,7 @@
           </div>
 
         </div>
-        <div class="col-sm-5">
+        <div class="col-sm-5 margin_top_50">
           <div class="myphoto">
             <img class="name-tag" src="img/name-tag.png" alt="">
             <div class="animate"><img src="img/myphoto3.png" alt=""></div>
@@ -147,243 +145,181 @@
 
         <!-- carousal details ==========================>>>> -->
         <section class="Hobby-section">
-          
           <div class="container">
-            <div>
-              <h1 style="font-weight: 600;">Projects</h1>
+            <div class="text-center mb-4">
+              <h1 class="font-weight-bold">Projects</h1>
               <p>Left engineering because my projects needed more heart, less math!</p>
             </div>
-            <div class="carousel">
-              <input type="radio" name="slides" checked="checked" id="hobby-1">
-              <input type="radio" name="slides" id="hobby-2">
-              <input type="radio" name="slides" id="hobby-3">
-              <input type="radio" name="slides" id="hobby-4">
-              <input type="radio" name="slides" id="hobby-5">
-              <input type="radio" name="slides" id="hobby-6">
-              <ul class="hobby__slides">
-                <li class="hobby__slide">
-                  <figure>
-                    <div>
-                      <button><a href="https://manthanr.itch.io/ghost-shooter" target="_blank"><img src="img/TDS.png" alt=""></a></button>
-                    </div>
+            <div id="projectsCarousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <figure class="text-center">
+                    <a href="https://manthanr.itch.io/ghost-shooter" target="_blank">
+                      <img src="img/TDS.png" class="d-block w-100" alt="Ghost Shooter">
+                    </a>
                     <figcaption>
                       Passion project in attempt to learn C# and Unity
                       <span class="credit"></span>
                     </figcaption>
                   </figure>
-                </li>
-                <li class="hobby__slide">
-                  <figure>
-                    <div>
-                      <iframe src="https://www.behance.net/embed/project/212073569?ilo0=1" height="512" width="837" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin"></iframe>
-                    </div>
+                </div>
+                <div class="carousel-item">
+                  <figure class="text-center">
+                    <iframe src="https://www.behance.net/embed/project/212073569?ilo0=1" height="512" width="100%" allowfullscreen frameborder="0"></iframe>
                     <figcaption>
                       Switchboard Spacial Mapping <br>- Interactive Prototype
                       <span class="credit"></span>
                     </figcaption>
                   </figure>
-                </li>
-                <li class="hobby__slide">
-                  <figure>
-                    <div>
-                      <iframe src="https://www.behance.net/embed/project/189782019?ilo0=1" height="512" width="837" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin"></iframe>
-                    </div>
+                </div>
+                <div class="carousel-item">
+                  <figure class="text-center">
+                    <iframe src="https://www.behance.net/embed/project/189782019?ilo0=1" height="512" width="100%" allowfullscreen frameborder="0"></iframe>
                     <figcaption>
-                      MK Jewellery App <br>
-                      Created for A local shop 
+                      MK Jewellery App <br>Created for A local shop
                       <span class="credit"></span>
                     </figcaption>
                   </figure>
-                </li>
-                <li class="hobby__slide">
-                  <figure>
-                    <div>
-                      <iframe src="https://www.behance.net/embed/project/211625757?ilo0=1" height="512" width="837" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin"></iframe>
-                    </div>
+                </div>
+                <div class="carousel-item">
+                  <figure class="text-center">
+                    <iframe src="https://www.behance.net/embed/project/211625757?ilo0=1" height="512" width="100%" allowfullscreen frameborder="0"></iframe>
                     <figcaption>
-                      Brand Analysis - Phool <br><span></span>
-                      <span class="credit">Guided by - Prof. Saurabh Tiwari </span>
+                      Brand Analysis - Phool <br>
+                      <span class="credit">Guided by - Prof. Saurabh Tiwari</span>
                     </figcaption>
                   </figure>
-                </li>
-                <li class="hobby__slide">
-                  <figure>
-                    <div>
-                      <iframe src="https://www.behance.net/embed/project/208366253?ilo0=1" height="512" width="837" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin"></iframe>
-                    </div>
+                </div>
+                <div class="carousel-item">
+                  <figure class="text-center">
+                    <iframe src="https://www.behance.net/embed/project/208366253?ilo0=1" height="512" width="100%" allowfullscreen frameborder="0"></iframe>
                     <figcaption>
                       AquaSILVER Brand Redesign
                       <span class="credit">Made in IIT-Delhi</span>
                     </figcaption>
                   </figure>
-                </li>
-                <li class="hobby__slide">
-                  <figure>
-                    <div>
-                      <iframe src="https://www.behance.net/embed/project/200596661?ilo0=1" height="512" width="837" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin"></iframe>
-                    </div>
+                </div>
+                <div class="carousel-item">
+                  <figure class="text-center">
+                    <iframe src="https://www.behance.net/embed/project/200596661?ilo0=1" height="512" width="100%" allowfullscreen frameborder="0"></iframe>
                     <figcaption>
                       Amazon Homepage Redesign Mobile App
                       <span class="credit"></span>
                     </figcaption>
                   </figure>
-                </li>
-              </ul>
-              <ul class="carousel__thumbnails">
-                <li>
-                  <label for="hobby-1"><span>1</span>
-                </li>
-                <li>
-                  <label for="hobby-2"><span>2</span></label>
-                </li>
-                <li>
-                  <label for="hobby-3"><span>3</span></label>
-                </li>
-                <li>
-                  <label for="hobby-4"><span>4</span></label>
-                </li>
-                <li>
-                  <label for="hobby-5"><span>5</span></label>
-                </li>
-                <li>
-                  <label for="hobby-6"><span>6</span></label>
-                </li>
-
-                
-              </ul>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#projectsCarousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#projectsCarousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </a>
             </div>
           </div>
         </section>
         <!-- carousal details ==========================>>>> -->
         <section class="Hobby-section">
-          
           <div class="container">
-            <div>
-              <h1 style="font-weight: 600;">Other than Professional life</h1>
+            <div class="text-center mb-4">
+              <h1 class="font-weight-bold">Other than Professional Life</h1>
               <p>I do a lot of things</p>
             </div>
-            <div class="carousel">
-              <input type="radio" name="slides" checked="checked" id="slide-1">
-              <input type="radio" name="slides" id="slide-2">
-              <input type="radio" name="slides" id="slide-3">
-              <input type="radio" name="slides" id="slide-4">
-              <input type="radio" name="slides" id="slide-5">
-              <input type="radio" name="slides" id="slide-6">
-              <ul class="carousel__slides">
-                <li class="carousel__slide">
-                  <figure>
-                    <div>
-                      <iframe width="820" height="500" src="https://www.youtube.com/embed/qyWw-HgHGBs"
-                        title="I MADE LAY&#39;S COMMERCIAL AT HOME | Manthan Rase [ Daniel Schiffer]" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
+            <div id="hobbyCarousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <figure class="text-center">
+                    <iframe width="100%" height="500" src="https://www.youtube.com/embed/qyWw-HgHGBs"
+                            title="I MADE LAY'S COMMERCIAL AT HOME | Manthan Rase [Daniel Schiffer]" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                     <figcaption>
                       Created homemade lay's commercial for fun
                       <span class="credit">Source: Manthan Rase (YouTube)</span>
                     </figcaption>
                   </figure>
-                </li>
-                <li class="carousel__slide">
-                  <figure>
-                    <div>
-                      <iframe width="820" height="500" src="https://www.youtube.com/embed/C98sWDmMcDw"
-                        title="I MADE LAY&#39;S COMMERCIAL AT HOME | Manthan Rase [ Daniel Schiffer]" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
+                </div>
+                <div class="carousel-item">
+                  <figure class="text-center">
+                    <iframe width="100%" height="500" src="https://www.youtube.com/embed/C98sWDmMcDw"
+                            title="My first paid Mirch commercial video" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                     <figcaption>
                       My first paid Mirch commercial video
                       <span class="credit">Source: Manthan Rase (YouTube)</span>
                     </figcaption>
                   </figure>
-                </li>
-                <li class="carousel__slide">
-                  <figure>
-                    <div>
-                      <iframe width="820" height="500" src="https://www.youtube.com/embed/szncDOFR1SI"
-                        title="I MADE LAY&#39;S COMMERCIAL AT HOME | Manthan Rase [ Daniel Schiffer]" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
+                </div>
+                <div class="carousel-item">
+                  <figure class="text-center">
+                    <iframe width="100%" height="500" src="https://www.youtube.com/embed/szncDOFR1SI"
+                            title="Improved Mirch commercial video with new camera" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                     <figcaption>
                       My first paid & improved Mirch commercial video with new camera
                       <span class="credit">Source: Manthan Rase (YouTube)</span>
                     </figcaption>
                   </figure>
-                </li>
-                <li class="carousel__slide">
-                  <figure>
-                    <div>
-                      <iframe width="820" height="500" src="https://www.youtube.com/embed/AIN2b6nF1JM"
-                        title="I MADE LAY&#39;S COMMERCIAL AT HOME | Manthan Rase [ Daniel Schiffer]" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
+                </div>
+                <div class="carousel-item">
+                  <figure class="text-center">
+                    <iframe width="100%" height="500" src="https://www.youtube.com/embed/AIN2b6nF1JM"
+                            title="Learning AR-VR using Unity Engine in IIT-Delhi" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                     <figcaption>
                       Learning AR-VR using Unity Engine in <span>IIT-Delhi</span>
                       <span class="credit">Source: Manthan Rase (YouTube)</span>
                     </figcaption>
                   </figure>
-                </li>
-                <li class="carousel__slide">
-                  <figure>
-                    <div>
-                      <iframe width="820" height="500" src="https://www.youtube.com/embed/g4dTQIVBCEs"
-                        title="I MADE LAY&#39;S COMMERCIAL AT HOME | Manthan Rase [ Daniel Schiffer]" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
+                </div>
+                <div class="carousel-item">
+                  <figure class="text-center">
+                    <iframe width="100%" height="500" src="https://www.youtube.com/embed/g4dTQIVBCEs"
+                            title="Learning VFX and 3D software" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                     <figcaption>
                       I love learning VFX and 3D software.
                       <span class="credit">Source: Manthan Rase (YouTube)</span>
                     </figcaption>
                   </figure>
-                </li>
-                <li class="carousel__slide">
-                  <figure>
-                    <div>
-                      <iframe width="820" height="500" src="https://www.youtube.com/embed/IoTGKJj2P1o"
-                        title="I MADE LAY&#39;S COMMERCIAL AT HOME | Manthan Rase [ Daniel Schiffer]" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
+                </div>
+                <div class="carousel-item">
+                  <figure class="text-center">
+                    <iframe width="100%" height="500" src="https://www.youtube.com/embed/IoTGKJj2P1o"
+                            title="My first short film - Overthinking (2020)" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                     <figcaption>
-                      My first short film - Overthinking(2020)
+                      My first short film - Overthinking (2020)
                       <span class="credit">Source: Manthan Rase (YouTube)</span>
                     </figcaption>
                   </figure>
-                </li>
-              </ul>
-              <ul class="carousel__thumbnails">
-                <li>
-                  <label for="slide-1"><span>1</span>
-                </li>
-                <li>
-                  <label for="slide-2"><span>2</span></label>
-                </li>
-                <li>
-                  <label for="slide-3"><span>3</span></label>
-                </li>
-                <li>
-                  <label for="slide-4"><span>4</span></label>
-                </li>
-                <li>
-                  <label for="slide-5"><span>5</span></label>
-                </li>
-                <li>
-                  <label for="slide-6"><span>6</span></label>
-                </li>
-
-                
-              </ul>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#hobbyCarousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#hobbyCarousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </a>
             </div>
           </div>
         </section>
 
         <!-- ==============sketch secton============== -->
         <div class="container">
-          <h1 style="font-weight: 600;padding: 0px 60px 26px;">The Daily Sketch Struggle</h1>
+          <div class="text-center mb-4">
+            <h1 class="font-weight-bold" style="font-weight: 600">The Daily Sketch Struggle</h1>
+          </div>
+          
           <div class="grid-container-sketch">
             <div>
               <img class='grid-item grid-item-3' src='img/Sketchs/digital-1.PNG' alt=''>
@@ -480,7 +416,11 @@
           <!-- ==============sketch secton end============== -->
 
         <script src="function.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+      </div>
+    </div>
+  </div>
+  
   </main>
   <footer></footer>
 </body>
