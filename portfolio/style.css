@@ -1249,9 +1249,25 @@ main {
     mix-blend-mode: multiply;
     right: 0;
     margin: auto;
+
+    .mobile-responsive{
+      flex-direction: column;
+      gap: 16px;
+    }
+
 }
 .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl{
   justify-content: center !important;
+
+  
+
+
+  @media (max-width: 767px) {
+   
+
+    
+  
+  }
 }
 .grid-container-sketch {
   width: 100%;
