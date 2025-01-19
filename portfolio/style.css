@@ -1344,3 +1344,46 @@ main {
 @media (min-width: 1025px){
 
 }
+
+.card {
+  min-height: 500px;
+  margin: 15px;
+}
+
+.yt-card {
+  min-height: 400px !important;
+  margin: 15px;
+}
+/* img.card-img-top {
+  min-height: 300px;
+  width: auto !important;
+  object-fit: cover;
+} */
+
+.card-body {
+  padding: 25px !important;
+  position: relative;
+}
+
+.learn-more-btn{
+  border: 1px solid black !important;
+  background-color: unset !important;
+  color: black;
+  width: 87%;
+  font-size: 18px;
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.learn-more-btn:hover{
+  border: 1px solid #a37eff  !important;
+  background-color: #a37eff  !important;
+  color: white !important;
+}
+
+p.card-text {
+  color: var(--bs-gray-600);
+}
