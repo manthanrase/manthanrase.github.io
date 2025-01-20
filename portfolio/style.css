@@ -49,6 +49,8 @@ nav img {
   width: 42px;
 }
 
+
+
 .row > * {
   flex-shrink: 0;
   width: 100%;
@@ -429,7 +431,21 @@ a.btn.px-4 {
     margin-right: 13px;
     margin-left: -15px;
   }
+
+  
+  
 }
+
+@media (max-width: 767px) {
+  .Mobile-resp{
+    display: flex;
+  }
+
+  .glow-on-hover{
+    margin: auto;
+  }
+}
+
 
 .glow-on-hover:before {
   content: '';
@@ -505,6 +521,13 @@ a.btn.px-4 {
   top: -30px;
   position: relative;
   right: 30px;
+
+  @media (max-width: 767px) {
+    width: 100%;
+    top: 0;
+    right: 0;
+  }
+  
 }
 
 .animate {
@@ -528,10 +551,14 @@ a.btn.px-4 {
 
 .Experience {
   position: relative;
-  background-image: url(img/edu-bg.png);
-  background-size: cover;
-  padding: 88px;
-  width: 100%;
+    background-image: url(img/edu-bg.png);
+    background-size: cover;
+    padding: 100px;
+     width: 100%;
+
+     @media (max-width: 767px) {
+      background-image: none;
+    }
 }
 
 .Experience ul {
@@ -558,7 +585,19 @@ a.btn.px-4 {
   background: linear-gradient(#a37eff 0 0) content-box,
     linear-gradient(var(--c, #bfa6ff) 0 0) padding-box,
     linear-gradient(var(--d, 90deg), #0000 75%, #d1beff 0) border-box;
-}
+
+    @media (max-width: 767px) {
+      grid-column: span 2;
+    text-align: center;
+    color: #a37eff;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: sans-serif;
+    position: relative;
+    background: none;
+    }
+
+  }
 .Experience li:nth-child(even) {
   grid-column-end: -1;
   --d: -90deg;
@@ -589,6 +628,10 @@ a.btn.px-4 {
   position: absolute;
   top: -35px;
   right: -13px;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
 }
 
 .Experience li:nth-child(even) time {
@@ -1217,7 +1260,8 @@ figcaption {
 }
 
 h1.font-weight-bold {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  font-weight: 700;
 }
 .carousel-control-prev-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e") !important;
@@ -1244,16 +1288,11 @@ main {
   .design-text {
     position: relative;
     left: 0;
-    width: 77%;
+    width: 100%;
     padding-bottom: 30px;
     mix-blend-mode: multiply;
     right: 0;
     margin: auto;
-
-    .mobile-responsive{
-      flex-direction: column;
-      gap: 16px;
-    }
 
 }
 .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl{
@@ -1263,10 +1302,14 @@ main {
 
 
   @media (max-width: 767px) {
-   
 
-    
-  
+    gap: 16px;
+   
+    .flex-mobile{
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
   }
 }
 .grid-container-sketch {
@@ -1365,6 +1408,10 @@ main {
   position: relative;
 }
 
+.card-title{
+  font-weight: bold;
+}
+
 .learn-more-btn{
   border: 1px solid black !important;
   background-color: unset !important;
@@ -1386,4 +1433,5 @@ main {
 
 p.card-text {
   color: var(--bs-gray-600);
+  font-size: 16px;
 }
