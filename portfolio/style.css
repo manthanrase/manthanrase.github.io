@@ -1435,3 +1435,8 @@ p.card-text {
   color: var(--bs-gray-600);
   font-size: 16px;
 }
+
+.flex-container{
+  display: flex;
+  flex-wrap: nowrap;}
+
