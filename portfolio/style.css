@@ -550,9 +550,11 @@ a.btn.px-4 {
 /* ======================= Experience ===================== */
 
 .Experience {
-  position: relative;
-    background-image: url(img/edu-bg.png);
+     position: relative;
+     background-color: rgb(140 140 140 / 25%);
+    /* background-image: url(img/edu-bg.png); */
     background-size: cover;
+    border-radius: 20px;
     padding: 100px;
      width: 100%;
 
@@ -1201,7 +1203,7 @@ h1 {
   color: coral;
 }
 .grid-container-sketch {
-  columns: 3 200px;
+  columns: 5 200px;
   column-gap: 1.5rem;
   width: 90%;
   margin: 0 auto;
