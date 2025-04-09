@@ -374,6 +374,13 @@ a.btn.px-4 {
 .landing-page {
   margin: 0px 15px;
   justify-items: center;
+
+  @media (max-width: 767px) {
+    .Mobile-res-new{
+      margin: auto;
+    } 
+    }
+  }
 }
 
 /* ------------------Main body section begins------------------ */
@@ -1311,6 +1318,10 @@ main {
       display: flex;
       flex-direction: column;
       gap: 16px;
+
+    .Mobile-res-new{
+      margin: auto;
+    } 
     }
   }
 }
